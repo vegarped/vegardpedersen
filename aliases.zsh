@@ -33,3 +33,8 @@
 # Show previous branches
   function branch() {git checkout $(git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)|%(committerdate:relative)|%(authorname)' --color=always|column -ts'|' | fzf | cut -f 1 -d ' ')}
   alias b='branch'
+
+# Check, build and run Cargo
+  alias cc="cargo check"
+  alias cb="cargo build"
+  alias cr="cargo run"
