@@ -38,3 +38,6 @@
   alias cc="cargo check"
   alias cb="cargo build"
   alias cr="cargo run"
+
+# Activate venv
+  alias activate="source .venv/bin/activate"
