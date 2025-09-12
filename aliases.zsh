@@ -7,8 +7,15 @@
   alias vp="cd ~/vegardpedersen"
 
 # Open vscode
-  alias c="code ."
+  alias c="code"
 
+# Open cursor
+  alias cu="cursor"
+
+# Activate venv
+  alias activate="source .venv/bin/activate"
+
+### Git ###
 # Git add
   alias ga="git add"
 
@@ -42,10 +49,8 @@
     open $pr_url;
   }
 
-# Check, build and run Cargo
+### Rust ###
   alias cc="cargo check"
   alias cb="cargo build"
   alias cr="cargo run"
-
-# Activate venv
-  alias activate="source .venv/bin/activate"
+  alias ct="cargo test"
